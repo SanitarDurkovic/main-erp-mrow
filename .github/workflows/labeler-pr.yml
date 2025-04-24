@@ -5,10 +5,7 @@ on:
 
 jobs:
   labeler:
-    if: github.actor != 'IanComradeBot'
-    permissions:
-      contents: read
-      pull-requests: write
+    if: github.actor != 'IanComradeBot' && github.actor != 'LOPBot'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@v5

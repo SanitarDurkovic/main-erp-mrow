@@ -53,12 +53,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingNeckLGBTPin
-        prob: 0.06
-        orGroup: dressermainloot
+      # LOP edit
         # Corvax-Pins-Start
       - id: ClothingNeckAtharaPin
-        prob: 0.06       
+        prob: 0.06
         orGroup: dressermainloot
       - id: ClothingNeckCorvaxPin
         prob: 0.06
@@ -68,7 +66,7 @@
         orGroup: dressermainloot
       - id: ClothingNeckElysiumPin
         prob: 0.06
-        orGroup: dressermainloot 
+        orGroup: dressermainloot
       - id: ClothingNeckMainPin
         prob: 0.06
         orGroup: dressermainloot
