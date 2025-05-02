@@ -12,14 +12,14 @@ public enum VoiceMaskUIKey : byte
 public sealed class VoiceMaskBuiState : BoundUserInterfaceState
 {
     public readonly string Name;
+    public readonly string Voice; // LOP edit
     public readonly string? Verb;
-    public readonly string Voice; // Corvax-TTS
 
     public VoiceMaskBuiState(string name, string voice, string? verb)
     {
         Name = name;
+        Voice = voice; // LOP edit
         Verb = verb;
-        Voice = voice;  // Corvax-TTS
     }
 }
 

@@ -44,12 +44,11 @@ namespace Content.IntegrationTests.Tests.Preferences
 
         private static HumanoidCharacterProfile CharlieCharlieson()
         {
-            return new()
+            return new HumanoidCharacterProfile() // LOP edit
             {
                 Name = "Charlie Charlieson",
                 FlavorText = "The biggest boy around.",
                 Species = "Human",
-                Voice = "Eugene", // Corvax-TTS
                 Age = 21,
                 Appearance = new(
                     "Afro",
@@ -59,7 +58,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                     Color.Azure,
                     Color.Beige,
                     new ())
-            };
+            }.WithTtsVoice("nord"); // LOP edit
         }
 
         private static ServerDbSqlite GetDb(RobustIntegrationTest.ServerIntegrationInstance server)

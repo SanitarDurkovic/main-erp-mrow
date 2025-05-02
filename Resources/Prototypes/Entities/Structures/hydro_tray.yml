@@ -87,8 +87,10 @@
         acts: ["Destruction"]
   - type: Machine
     board: HydroponicsTrayMachineCircuitboard
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+    # LOP edit start
+  - type: TTS
+    voicePrototypeId: glados
+    # LOP edit end
   - type: WiresPanel
   - type: AmbientSound
     volume: -9
