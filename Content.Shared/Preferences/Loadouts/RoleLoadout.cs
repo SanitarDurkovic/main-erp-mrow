@@ -1,7 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared.Humanoid.Prototypes;
-using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Random;
 using Robust.Shared.Collections;
 using Robust.Shared.Network;
@@ -57,11 +56,14 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
     /// <summary>
     /// Ensures all prototypes exist and effects can be applied.
     /// </summary>
-    public void EnsureValid(HumanoidCharacterProfile profile, ICommonSession session, IDependencyCollection collection)
+    public void EnsureValid(HumanoidCharacterProfile profile, ICommonSession? session, IDependencyCollection collection
+#if LOP_Sponsors
+    , int sponsorTier = 0
+#endif
+    )
     {
         var groupRemove = new ValueList<string>();
         var protoManager = collection.Resolve<IPrototypeManager>();
-        var netManager = collection.Resolve<INetManager>(); // Corvax-Loadouts
 
         if (!protoManager.TryIndex(Role, out var roleProto))
         {
@@ -122,22 +124,17 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 continue;
             }
 
-            // Corvax-Loadouts-Start
-            if (collection.TryResolveType<ISharedLoadoutsManager>(out var loadoutsManager) && group.Id == "Inventory")
+            //LOP edit start
+            if (groupProto.ID.ToString().Contains("Sponsor")
+#if LOP_Sponsors
+                && sponsorTier < 3
+#endif
+            )
             {
-                var prototypes = new List<string>();
-                if (netManager.IsClient)
-                {
-                    prototypes = loadoutsManager.GetClientPrototypes();
-                }
-                else if (loadoutsManager.TryGetServerPrototypes(session.UserId, out var protos))
-                {
-                    prototypes = protos;
-                }
-
-                groupProto.Loadouts.AddRange(prototypes.Select(id => (ProtoId<LoadoutPrototype>)id));
+                groupRemove.Add(group);
+                continue;
             }
-            // Corvax-Loadouts-End
+            //LOP edit end
 
             var loadouts = groupLoadouts[..Math.Min(groupLoadouts.Count, groupProto.MaxLimit)];
 
@@ -175,7 +172,7 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
             // If you put invalid ones first but that's your fault for not using sensible defaults
             if (loadouts.Count < groupProto.MinLimit)
             {
-                foreach (var protoId in groupProto.Loadouts)
+                foreach (var protoId in groupProto.Loadouts) // LOP edit: вернул groupProto.Loadouts
                 {
                     if (loadouts.Count >= groupProto.MinLimit)
                         break;

@@ -31,7 +31,17 @@ namespace Content.Shared.Preferences
 
         public const int MaxNameLength = 32;
         public const int MaxLoadoutNameLength = 32;
-        public const int MaxDescLength = 512;
+        //public const int MaxDescLength = 512; //LOP edit
+
+        //LOP edit start
+        public static int DescriptionLength(int tier)
+        {
+            if (tier >= 4)
+                return 2048;
+
+            return 1024;
+        }
+        //LOP edit end
 
         /// <summary>
         /// Job preferences for initial spawn.
@@ -504,7 +514,12 @@ namespace Content.Shared.Preferences
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
-        public void EnsureValid(ICommonSession session, IDependencyCollection collection, string[] sponsorPrototypes)
+        public void EnsureValid(ICommonSession session, IDependencyCollection collection, List<string> sponsorPrototypes// LOP edit start: sponsor system
+#if LOP_Sponsors
+        , int sponsorTier
+#endif
+        //LOP edit end
+        )
         {
             var configManager = collection.Resolve<IConfigurationManager>();
             var prototypeManager = collection.Resolve<IPrototypeManager>();
@@ -514,14 +529,6 @@ namespace Content.Shared.Preferences
                 Species = SharedHumanoidAppearanceSystem.DefaultSpecies;
                 speciesPrototype = prototypeManager.Index(Species);
             }
-
-            // Corvax-Sponsors-Start: Reset to human if player not sponsor
-            if (speciesPrototype.SponsorOnly && !sponsorPrototypes.Contains(Species.Id))
-            {
-                Species = SharedHumanoidAppearanceSystem.DefaultSpecies;
-                speciesPrototype = prototypeManager.Index(Species);
-            }
-            // Corvax-Sponsors-End
 
             var sex = Sex switch
             {
@@ -578,10 +585,17 @@ namespace Content.Shared.Preferences
                 name = GetName(Species, gender);
             }
 
+            //LOP edit start
+            var descLength = DescriptionLength(0);
+#if LOP_Sponsors
+            descLength = DescriptionLength(sponsorTier);
+#endif
+            //LOP edit end
+
             string flavortext;
-            if (FlavorText.Length > MaxDescLength)
+            if (FlavorText.Length > descLength) //LOP edit
             {
-                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..MaxDescLength];
+                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..descLength];    //LOP edit
             }
             else
             {
@@ -668,7 +682,11 @@ namespace Content.Shared.Preferences
                     continue;
                 }
 
-                loadouts.EnsureValid(this, session, collection);
+                loadouts.EnsureValid(this, session, collection
+#if LOP_Sponsors
+                , sponsorTier
+#endif
+                );
             }
 
             foreach (var value in toRemove)
@@ -716,10 +734,18 @@ namespace Content.Shared.Preferences
             return result;
         }
 
-        public ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection, string[] sponsorPrototypes)
+        public ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection, List<string> sponsorPrototypes// LOP edit: sponsor system
+#if LOP_Sponsors
+        , int sponsorTier = 0
+#endif
+        )
         {
             var profile = new HumanoidCharacterProfile(this);
-            profile.EnsureValid(session, collection, sponsorPrototypes);
+            profile.EnsureValid(session, collection, sponsorPrototypes  //LOP edit
+#if LOP_Sponsors
+            , sponsorTier
+#endif
+            );
             return profile;
         }
 

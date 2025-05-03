@@ -13,6 +13,7 @@
     <Nullable>enable</Nullable>
     <ServerGarbageCollection>true</ServerGarbageCollection>
   </PropertyGroup>
+  <Import Project="..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props" Condition="Exists('..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props')" />
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
   </ItemGroup>
@@ -25,7 +26,6 @@
     <ProjectReference Include="..\RobustToolbox\Robust.Shared\Robust.Shared.csproj" />
     <ProjectReference Include="..\RobustToolbox\Robust.Server\Robust.Server.csproj" />
     <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
-    <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Server\Content.Corvax.Interfaces.Server.csproj" />
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 </Project>

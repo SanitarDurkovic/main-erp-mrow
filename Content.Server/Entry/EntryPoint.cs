@@ -33,6 +33,11 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+#if LOP_Sponsors
+using Content.Server._NewParadise.Sponsors;
+using Content.Server._NC.Discord;
+using Content.Server._NC.JoinQueue;
+#endif
 
 namespace Content.Server.Entry
 {
@@ -110,7 +115,14 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
-                IoCManager.Resolve<TTSManager>().Initialize(); // LOP edit
+                //LOP edit start
+                IoCManager.Resolve<TTSManager>().Initialize();
+#if LOP_Sponsors
+                IoCManager.Resolve<SponsorsManager>().Initialize();
+                IoCManager.Resolve<DiscordAuthManager>().Initialize();
+                IoCManager.Resolve<JoinQueueManager>().Initialize();
+#endif
+                //LOP edit end
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();

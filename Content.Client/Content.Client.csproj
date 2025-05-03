@@ -12,6 +12,7 @@
     <Configurations>Debug;Release;Tools;DebugOpt</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
+  <Import Project="..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props" Condition="Exists('..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props')" />
   <ItemGroup>
     <PackageReference Include="Nett" />
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
@@ -22,8 +23,6 @@
     <ProjectReference Include="..\RobustToolbox\Robust.Shared\Robust.Shared.csproj" />
     <ProjectReference Include="..\RobustToolbox\Robust.Client\Robust.Client.csproj" />
     <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
-    <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Shared\Content.Corvax.Interfaces.Shared.csproj" />
-    <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Client\Content.Corvax.Interfaces.Client.csproj" />
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />

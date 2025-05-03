@@ -36,7 +36,14 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Replays;
 using Robust.Shared.Timing;
-using Content.Client._NewParadise.TTS; // LOP edit
+// LOP edit start
+using Content.Client._NewParadise.TTS;
+#if LOP_Sponsors
+using Content.Client._NewParadise.Sponsors;
+using Content.Client._NC.DiscordAuth;
+using Content.Client._PrivateClient._NC.JoinQueue;
+#endif
+//LOP edit end
 
 namespace Content.Client.Entry
 {
@@ -73,7 +80,15 @@ namespace Content.Client.Entry
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
         [Dependency] private readonly TitleWindowManager _titleWindowManager = default!;
-        [Dependency] private readonly TTSManager _ttsManager = default!; // LOP edit
+
+        //LOP edit start
+        [Dependency] private readonly TTSManager _ttsManager = default!;
+#if LOP_Sponsors
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
+        [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
+        [Dependency] private readonly JoinQueueManager _joinQueue = default!;
+#endif
+        // LOP edit end
 
         public override void Init()
         {
@@ -137,6 +152,11 @@ namespace Content.Client.Entry
             _playbackMan.Initialize();
             // LOP edit start
             _ttsManager.Initialize();
+#if LOP_Sponsors
+            _sponsorsManager.Initialize();
+            _discordAuthManager.Initialize();
+            _joinQueue.Initialize();
+#endif
             // LOP edit end
 
             //AUTOSCALING default Setup!

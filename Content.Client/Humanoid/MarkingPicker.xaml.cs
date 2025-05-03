@@ -1,5 +1,4 @@
 using System.Linq;
-using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
@@ -8,10 +7,12 @@ using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
-using Robust.Client.Utility;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
+#if LOP_Sponsors
+using Content.Client._NewParadise.Sponsors;
+#endif
 
 namespace Content.Client.Humanoid;
 
@@ -21,8 +22,11 @@ public sealed partial class MarkingPicker : Control
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
-	private ISharedSponsorsManager? _sponsorsManager; // Corvax-Sponsors
-	
+
+#if LOP_Sponsors
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
+#endif
+
     private readonly SpriteSystem _sprite;
 
     public Action<MarkingSet>? OnMarkingAdded;
@@ -51,7 +55,7 @@ public sealed partial class MarkingPicker : Control
 
     public string IgnoreCategories
     {
-        get => string.Join(',',  _ignoreCategories);
+        get => string.Join(',', _ignoreCategories);
         set
         {
             _ignoreCategories.Clear();
@@ -129,11 +133,10 @@ public sealed partial class MarkingPicker : Control
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
-        IoCManager.Instance!.TryResolveType(out _sponsorsManager); // Corvax-Sponsors
 
         _sprite = _entityManager.System<SpriteSystem>();
 
-        CMarkingCategoryButton.OnItemSelected +=  OnCategoryChange;
+        CMarkingCategoryButton.OnItemSelected += OnCategoryChange;
         CMarkingsUnused.OnItemSelected += item =>
             _selectedUnusedMarking = CMarkingsUnused[item.ItemIndex];
 
@@ -233,10 +236,24 @@ public sealed partial class MarkingPicker : Control
 
             var item = CMarkingsUnused.AddItem($"{GetMarkingName(marking)}", _sprite.Frame0(marking.Sprites[0]));
             item.Metadata = marking;
-            // Corvax-Sponsors-Start
-            if (marking.SponsorOnly && _sponsorsManager != null)
-                item.Disabled = !_sponsorsManager.GetClientPrototypes().Contains(marking.ID);
-            // Corvax-Sponsors-End
+            // LOP edit start
+            if (marking.SponsorOnly)
+            {
+                item.Disabled = true;
+#if LOP_Sponsors
+                if (_sponsorsManager.TryGetInfo(out var sponsor))
+                {
+                    bool havemarks = false;
+                    if (sponsor.Tier > 3)
+                    {
+                        var marks = Loc.GetString($"sponsor-markings-tier").Split(";", StringSplitOptions.RemoveEmptyEntries);
+                        havemarks = marks.Contains(marking.ID);
+                    }
+                    item.Disabled = !(sponsor.AllowedMarkings.Contains(marking.ID) || sponsor.AllowedMarkings.Contains("ALL") || havemarks);
+                }
+#endif
+            }
+            //LOP edit end
         }
 
         CMarkingPoints.Visible = _currentMarkings.PointsLeft(_selectedMarkingCategory) != -1;
@@ -400,7 +417,7 @@ public sealed partial class MarkingPicker : Control
     private void OnUsedMarkingSelected(ItemList.ItemListSelectedEventArgs item)
     {
         _selectedMarking = CMarkingsUsed[item.ItemIndex];
-        var prototype = (MarkingPrototype) _selectedMarking.Metadata!;
+        var prototype = (MarkingPrototype)_selectedMarking.Metadata!;
 
         if (prototype.ForcedColoring)
         {
@@ -455,7 +472,7 @@ public sealed partial class MarkingPicker : Control
     private void ColorChanged(int colorIndex)
     {
         if (_selectedMarking is null) return;
-        var markingPrototype = (MarkingPrototype) _selectedMarking.Metadata!;
+        var markingPrototype = (MarkingPrototype)_selectedMarking.Metadata!;
         int markingIndex = _currentMarkings.FindIndexOf(_selectedMarkingCategory, markingPrototype.ID);
 
         if (markingIndex < 0) return;
@@ -478,7 +495,7 @@ public sealed partial class MarkingPicker : Control
             return;
         }
 
-        var marking = (MarkingPrototype) _selectedUnusedMarking.Metadata!;
+        var marking = (MarkingPrototype)_selectedUnusedMarking.Metadata!;
         var markingObject = marking.AsMarking();
 
         // We need add hair markings in cloned set manually because _currentMarkings doesn't have it
@@ -539,7 +556,7 @@ public sealed partial class MarkingPicker : Control
     {
         if (_selectedMarking is null) return;
 
-        var marking = (MarkingPrototype) _selectedMarking.Metadata!;
+        var marking = (MarkingPrototype)_selectedMarking.Metadata!;
 
         _currentMarkings.Remove(_selectedMarkingCategory, marking.ID);
 

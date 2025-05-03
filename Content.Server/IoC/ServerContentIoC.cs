@@ -30,6 +30,11 @@ using Content.Shared.Chat;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+#if LOP_Sponsors
+using Content.Server._NewParadise.Sponsors;
+using Content.Server._NC.Discord;
+using Content.Server._NC.JoinQueue;
+#endif
 
 namespace Content.Server.IoC
 {
@@ -63,7 +68,6 @@ namespace Content.Server.IoC
             IoCManager.Register<IAdminLogManager, AdminLogManager>();
             IoCManager.Register<PlayTimeTrackingManager>();
             IoCManager.Register<UserDbDataManager>();
-            IoCManager.Register<TTSManager>(); // LOP edit
             IoCManager.Register<ServerInfoManager>();
             IoCManager.Register<PoissonDiskSampler>();
             IoCManager.Register<DiscordWebhook>();
@@ -79,6 +83,15 @@ namespace Content.Server.IoC
             IoCManager.Register<ConnectionManager>();
             IoCManager.Register<MultiServerKickManager>();
             IoCManager.Register<CVarControlManager>();
+
+            // LOP edit start
+            IoCManager.Register<TTSManager>();
+#if LOP_Sponsors
+            IoCManager.Register<SponsorsManager>();
+            IoCManager.Register<DiscordAuthManager>();
+            IoCManager.Register<JoinQueueManager>();
+#endif
+            // LOP edit end
         }
     }
 }
