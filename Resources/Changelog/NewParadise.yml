@@ -36,3 +36,11 @@
   id: 3
   time: '2025-05-03T08:10:33.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/11
+- author: Evgencheg
+  changes:
+  - message: "\u041F\u0440\u043E\u0432\u0435\u0434\u0451\u043D \u0430\u043F\u0441\u0442\
+      \u0440\u0438\u043C!"
+    type: Tweak
+  id: 4
+  time: '2025-05-13T21:26:28.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/18
