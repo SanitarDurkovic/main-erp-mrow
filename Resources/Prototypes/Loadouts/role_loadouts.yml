@@ -2,7 +2,6 @@
 - type: roleLoadout
   id: JobCaptain
   groups:
-  - Inventory # Corvax-Loadouts
   - CaptainHead
   - CaptainNeck
   - CaptainJumpsuit
@@ -11,11 +10,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - HoPHead
   - HoPNeck
@@ -26,6 +30,12 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # Silicons
 #- type: roleLoadout
@@ -42,7 +52,6 @@
 - type: roleLoadout
   id: JobPassenger
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - PassengerJumpsuit
   - CommonBackpack
@@ -55,11 +64,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobBartender
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - BartenderHead
   - BartenderJumpsuit
@@ -69,11 +83,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobServiceWorker
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
@@ -81,11 +100,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobChef
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ChefHead
   - ChefMask
@@ -96,11 +120,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobLibrarian
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
@@ -108,11 +137,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobLawyer
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
@@ -121,11 +155,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobChaplain
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ChaplainHead
   - ChaplainMask
@@ -137,11 +176,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobJanitor
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - JanitorHead
   - JanitorJumpsuit
@@ -153,11 +197,16 @@
   - Trinkets
   - JanitorPlunger
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobBotanist
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - BotanistHead
   - BotanistJumpsuit
@@ -167,11 +216,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobClown
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ClownHead
   - ClownJumpsuit
@@ -181,11 +235,16 @@
   - Glasses
   - SurvivalClown
   - Trinkets
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobMime
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - MimeHead
   - MimeMask
@@ -196,11 +255,16 @@
   - Glasses
   - SurvivalMime
   - Trinkets
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobMusician
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - MusicianJumpsuit
   - CommonBackpack
@@ -210,12 +274,17 @@
   - Trinkets
   - Instruments
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # Cargo
 - type: roleLoadout
   id: JobQuartermaster
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - QuartermasterHead
   - QuartermasterNeck
@@ -227,11 +296,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobCargoTechnician
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - CargoTechnicianHead
   - CargoTechnicianJumpsuit
@@ -242,11 +316,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobSalvageSpecialist
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
@@ -255,12 +334,17 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # Engineering
 - type: roleLoadout
   id: JobChiefEngineer
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
@@ -271,22 +355,32 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobTechnicalAssistant
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobStationEngineer
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - StationEngineerHead
   - StationEngineerJumpsuit
@@ -297,11 +391,16 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
@@ -310,12 +409,17 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # Science
 - type: roleLoadout
   id: JobResearchDirector
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ResearchDirectorHead
   - ResearchDirectorNeck
@@ -328,11 +432,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobScientist
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ScientistHead
   - ScientistNeck
@@ -346,11 +455,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobResearchAssistant
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ResearchAssistantJumpsuit
   - ScientistBackpack
@@ -358,12 +472,17 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # Security
 - type: roleLoadout
   id: JobHeadOfSecurity
   groups:
-  - Inventory # Corvax-Loadouts
   - HeadofSecurityHead
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
@@ -375,11 +494,16 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobWarden
   groups:
-  - Inventory # Corvax-Loadouts
   - WardenHead
   - WardenJumpsuit
   - SecurityBackpack
@@ -390,11 +514,16 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
-  - Inventory # Corvax-Loadouts
   - SecurityHead
   - SecurityJumpsuit
   - SecurityBackpack
@@ -406,11 +535,16 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobDetective
   groups:
-  - Inventory # Corvax-Loadouts
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
@@ -421,22 +555,32 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
-  - Inventory # Corvax-Loadouts
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathToolSecurity
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # Medical
 - type: roleLoadout
   id: JobChiefMedicalOfficer
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ChiefMedicalOfficerHead
   - MedicalMask
@@ -450,11 +594,16 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobMedicalDoctor
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
@@ -468,11 +617,16 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack
@@ -480,11 +634,16 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobChemist
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - MedicalMask
   - ChemistJumpsuit
@@ -495,11 +654,16 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobParamedic
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ParamedicHead
   - MedicalMask
@@ -512,23 +676,33 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # Wildcards
 - type: roleLoadout
   id: JobZookeeper
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - CommonBackpack
   - Glasses
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobReporter
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ReporterJumpsuit
   - CommonBackpack
@@ -536,11 +710,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobPsychologist
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
@@ -548,11 +727,16 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobBoxer
   groups:
-  - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - BoxerJumpsuit
   - BoxerGloves
@@ -561,6 +745,12 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
 # They will be used without player configuration, thus they will only ever apply what is forced by MinLimit

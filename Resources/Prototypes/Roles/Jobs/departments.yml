@@ -58,6 +58,7 @@
   color: "#334E6D"
   roles:
   - Captain
+  - LPPAdjutant
   - IAA # Corvax-IAA
   - ChiefEngineer
   - ChiefMedicalOfficer
@@ -110,6 +111,7 @@
   roles:
   - HeadOfSecurity
   - SecurityCadet
+  - LPPSecurityEngineer
   - SecurityOfficer
   - Pilot # Corvax-Pilot
   - Detective

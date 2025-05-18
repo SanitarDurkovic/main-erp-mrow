@@ -1,0 +1,16 @@
+ent-LPPClothingOuterArmoradvancedNPZ = комплект защиты НПЗ
+    .desc = Комплект из бронеэлементов, защищающие жизненно важные органы, а так же конечности носителя.
+ent-LPPClothingOuterHardsuitNPZ = скафандр NPZ-72s - "Soldat"
+    .desc = Стандартный скафандр войск Нового Правительства Земли, удобен и надёжен.
+ent-LPPClothingOuterHardsuitHelmetNPZ = шлем NPZ-72
+    .desc = Пархай как бабочка, жаль, что ты уже мёртв, жалкий ксенос!
+ent-LPPClothingOuterHardsuitSpecopsNPZ = скафандр NPZ-72+ - "Schatten"
+    .desc = Модифицированный вариант стандартного скафандра НПЗ, предоставляет мобильность, крепкость, а так же хорошую защиту от всевозможных видов урона.
+ent-LPPClothingOuterHardsuitHelmetSpecopsNPZ = шлем NPZ-72+
+    .desc = Пархай как бабочка, жаль, что ты уже мёртв, жалкий ксенос!
+ent-LPPClothingOuterCoatNPZ = куртка с символикой НПЗ
+    .desc = Лёгкая нейлоновая куртка с яркими неоновыми полосками и принтом на спине, а так же карманами.
+ent-LPPClothingOuterArmorNPZ = бронежилет с символикой НПЗ
+    .desc = Бронежилет с опознавательными элементами НПЗ.
+ent-LPPClothingOuterNPZRepresentative = тренч представителя НПЗ
+    .desc = Кожаный тренч с пуленепробиваемым жилетом. Оно кричит - "Стильно!".

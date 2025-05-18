@@ -1,18 +1,22 @@
 - type: roleLoadout
   id: JobIAA
   groups:
-  - Inventory # Corvax-Loadouts
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobPilot
   groups:
-  - Inventory # Corvax-Loadouts
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
@@ -21,11 +25,16 @@
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobBrigmedic
   groups:
-  - Inventory # Corvax-Loadouts
   - BrigmedicHead
   - BrigmedicMask
   - BrigmedicJumpsuit
@@ -35,3 +44,9 @@
   - BrigmedicShoes
   - SurvivalMedical
   - Trinkets
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
