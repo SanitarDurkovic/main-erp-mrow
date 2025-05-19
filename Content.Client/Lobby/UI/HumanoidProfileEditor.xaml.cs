@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Shared._NewParadise; // LOP edit
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -221,7 +222,14 @@ namespace Content.Client.Lobby.UI
 
             // LOP edit start
             #region Voice
+
             InitializeVoice();
+
+            if (configurationManager.GetCVar(NewParadiseCvars.TtsEnabled))
+            {
+                TTSContainer.Visible = true;
+            }
+
             #endregion
             // LOP edit end
 
@@ -609,7 +617,16 @@ namespace Content.Client.Lobby.UI
             SpeciesButton.Clear();
             _species.Clear();
 
-            _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart));
+            // LOP edit start
+            int sponsorTier = 0;
+#if LOP
+            var sponsorman = IoCManager.Resolve<SponsorsManager>();
+            if (sponsorman.TryGetInfo(out var sponsorInfo))
+                sponsorTier = sponsorInfo.Tier;
+#endif
+            // LOP edit end
+
+            _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart && o.SponsorTier <= sponsorTier));  //LOP edit
             var speciesIds = _species.Select(o => o.ID).ToList();
 
             for (var i = 0; i < _species.Count; i++)
@@ -1553,7 +1570,15 @@ namespace Content.Client.Lobby.UI
 
         private void RandomizeEverything()
         {
-            Profile = HumanoidCharacterProfile.Random();
+            // LOP edit start
+            int sponsorTier = 0;
+#if LOP
+            var sponsorman = IoCManager.Resolve<SponsorsManager>();
+            if (sponsorman.TryGetInfo(out var sponsorInfo))
+                sponsorTier = sponsorInfo.Tier;
+#endif
+            // LOP edit end
+            Profile = HumanoidCharacterProfile.Random(sponsorTier: sponsorTier);
             SetProfile(Profile, CharacterSlot);
             SetDirty();
         }

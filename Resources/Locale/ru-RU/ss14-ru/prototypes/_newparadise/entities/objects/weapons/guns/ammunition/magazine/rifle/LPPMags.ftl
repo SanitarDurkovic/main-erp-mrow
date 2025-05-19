@@ -1,0 +1,12 @@
+ent-LPPBaseMagazineRifle = магазин (калибр 5,56х45)
+    .desc = { ent-BaseItem.desc }
+ent-LPPMagazineRifleM4A1Lethal = магазин (калибр 5,56х45)
+    .desc = { ent-LPPBaseMagazineRifle.desc }
+ent-LPPMagazineRifleM4A1Practice = магазин (калибр 5,56х45 учебный)
+    .desc = { ent-LPPBaseMagazineRifle.desc }
+ent-LPPMagazineRifleM4A1Uranium = магазин (калибр 5,56x45 урановый)
+    .desc = { ent-LPPBaseMagazineRifle.desc }
+ent-LPPMagazineRifleMars = обойма винтовки "Марс"
+    .desc = { ent-BaseItem.desc }
+ent-LPPMagazineRifleGarand = обойма "гаранда"
+    .desc = { ent-BaseItem.desc }
