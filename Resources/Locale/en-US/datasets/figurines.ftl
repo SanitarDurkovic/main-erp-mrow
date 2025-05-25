@@ -228,8 +228,9 @@ figurines-footsoldier-2 = Кого ты выберешь? Их или нас? Н
 figurines-footsoldier-3 = Glory to the syndicate!
 figurines-footsoldier-4 = Down with Nanotrasen!
 figurines-footsoldier-5 = I'd rather die than join Nanotrasen.
-figurines-wizard-1 = Ei Nath!
-figurines-wizard-2 = Wehgardium Leviosa!
+
+figurines-wizard-1 = Ei Nath!!
+figurines-wizard-2 = Real wizards support trans rights.
 figurines-wizard-3 = Skidaddle skadoodle!
 figurines-wizard-4 = ФАЙРБОЛЛ!
 figurines-space-dragon-1 = Рыба поглотит станцию.
