@@ -5,6 +5,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
+using Content.Shared.Humanoid;
 using Content.Shared.Strip.Components;
 using Robust.Shared.GameStates;
 using Content.Shared.Tag; // LOP edit
