@@ -73,18 +73,20 @@ names-ai-dataset-62 = К.И.Н.Г
 names-ai-dataset-64 = Рыцарь
 names-ai-dataset-65 = Луи
 # Named after the Manchester Mark 1, the successor of which was actually named the Ferranti Mark 1, rather than Manchester Mark 2
-names-ai-dataset-66 = Манчестер Марк 2
-names-ai-dataset-67 = МАРК13
-names-ai-dataset-68 = Мария
-names-ai-dataset-69 = Марвин
-names-ai-dataset-70 = Макс 404
-names-ai-dataset-71 = Металоголовый
-names-ai-dataset-72 = М.И.М.И.
-names-ai-dataset-73 = МК УЛЬТРА
-names-ai-dataset-74 = Монарх
-names-ai-dataset-75 = Дурной3000
-names-ai-dataset-76 = Мультивак
-# names-ai-dataset-77 = NCH
+names-ai-dataset-66 = Manchester Mark 2
+
+names-ai-dataset-67 = MARK13
+names-ai-dataset-68 = Maria
+names-ai-dataset-69 = Marvin
+names-ai-dataset-70 = Max 404
+names-ai-dataset-71 = Metalhead
+names-ai-dataset-72 = M.I.M.I
+names-ai-dataset-73 = Large Language Model
+names-ai-dataset-74 = Monarch
+names-ai-dataset-75 = Mugsy3000
+names-ai-dataset-76 = Multivac
+names-ai-dataset-77 = NCH
+
 # A play on both NT as in NanoTrasen and NT as in windows NT, of which version 6.0 is windows vista
 names-ai-dataset-78 = NT v6.0
 names-ai-dataset-79 = Пакард Бэлл
