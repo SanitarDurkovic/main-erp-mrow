@@ -44,7 +44,6 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
     [Dependency] private readonly MetaDataSystem _metaSystem = default!;
     [Dependency] private readonly PdaSystem _pdaSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IDependencyCollection _dependencyCollection = default!;   //LOP edit
 
     private bool _randomizeCharacters;
