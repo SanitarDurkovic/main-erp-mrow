@@ -1,9 +1,9 @@
 ent-MopBucket = ведро для швабры
-    .desc = Содержит воду и слёзы уборщика.
+    .desc = Содержит воду и слезы уборщика.
 ent-MopBucketFull = ведро для швабры
     .suffix = Полный
     .desc = { ent-MopBucket.desc }
-ent-MopBucketCubeWrapped = mop bucket cube
-    .desc = Unwrap this to get a mop bucket cube.
+ent-MopBucketCubeWrapped = куб ведра для швабры
+    .desc = Разверните это, чтобы получить куб ведра для швабры.
 ent-JanitorialTrolley = тележка уборщика
     .desc = Это альфа и омега санитарии.

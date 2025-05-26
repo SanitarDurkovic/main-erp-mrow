@@ -5,18 +5,18 @@ salvage-expedition-structure-remaining =
         [few] цели.
        *[other] целей.
     }
-salvage-expedition-type = Миссии
+salvage-expedition-type = Миссия
 salvage-expedition-window-title = Утилизаторские экспедиции
 salvage-expedition-window-difficulty = Сложность:
 salvage-expedition-window-details = Подробности:
 salvage-expedition-window-hostiles = Враги:
 salvage-expedition-window-duration = Продолжительность:
 salvage-expedition-window-biome = Биом:
+offering-window-claimed = Получено
+offering-window-claim = Получить
 salvage-expedition-window-modifiers = Модификаторы:
-offering-window-claimed = Принято
-offering-window-claim = Принять
+salvage-expedition-difficulty-players = Рекомендуемый размер команды:
 salvage-expedition-window-next = Следующее предложение
-salvage-expedition-difficulty-players = Рекомендовано утилизаторов:
 salvage-expedition-difficulty-Moderate = Умеренная
 salvage-expedition-difficulty-Hazardous = Высокая
 salvage-expedition-difficulty-Extreme = Экстремальная

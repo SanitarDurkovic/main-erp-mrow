@@ -1,6 +1,6 @@
 -entity-heater-setting-name =
     { $setting ->
-        [off] выкл
+        [off] выключено
         [low] низкий
         [medium] средний
         [high] высокий

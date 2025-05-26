@@ -1,5 +1,5 @@
 names-borg-dataset-1 = Боб
-names-borg-dataset-2 = Джл
+names-borg-dataset-2 = Джо
 names-borg-dataset-3 = Бип
 names-borg-dataset-4 = Бип II
 names-borg-dataset-5 = Бумбокс
@@ -37,7 +37,7 @@ names-borg-dataset-36 = Самоделкин
 names-borg-dataset-37 = Близняшка
 names-borg-dataset-38 = S.A.U.L
 names-borg-dataset-39 = Хонкер
-names-borg-dataset-40 = Лязгающий
-names-borg-dataset-41 = Это-Робот
+names-borg-dataset-40 = Кланкер
+names-borg-dataset-41 = Является-Роботом
 names-borg-dataset-42 = 9 из 7
-names-borg-dataset-43 = Промозглый бот
+names-borg-dataset-43 = Данк бот

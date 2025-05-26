@@ -5,6 +5,6 @@ ent-BorgFireExtinguisher = maneuvering jet
 ent-ExtinguisherSpray = струя огнетушителя
     .desc = { ent-Vapor.desc }
 ent-FireExtinguisherMini = карманный огнетушитель
-    .desc = Легкая и компактная модель огнетушителя в стекловолоконном корпусе. Вмещает меньше воды, чем его старший брат.
+    .desc = Лёгкая и компактная модель огнетушителя в стекловолоконном корпусе. Вмещает меньше воды, чем его старший брат.
 ent-SelfRechargingFireExtinguisher = self-recharging fire extinguisher
     .desc = It extinguishes fires. it slowly refills with water.

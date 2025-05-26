@@ -1,5 +1,6 @@
 # UI
 
+
 ## Window
 
 air-alarm-ui-access-denied = Недостаточный уровень доступа!
@@ -13,19 +14,19 @@ air-alarm-ui-window-mode-label = Режим
 air-alarm-ui-window-auto-mode-label = Авто-режим
 -air-alarm-state-name =
     { $state ->
-        [normal] Нормально
+        [normal] Норма
         [warning] Предупреждение
-        [danger] Опасно
-        [emagged] Взломано
-       *[invalid] Невалидно
+        [danger] Опасность
+        [emagged] Взломан
+       *[invalid] Неверно
     }
 air-alarm-ui-window-listing-title = {$address} : {-air-alarm-state-name(state:$state)}
 air-alarm-ui-window-pressure = { $pressure } кПа
 air-alarm-ui-window-pressure-indicator = Давление: [color={ $color }]{ $pressure } кПа[/color]
 air-alarm-ui-window-temperature = { $tempC } °C ({ $temperature } К)
 air-alarm-ui-window-temperature-indicator = Температура: [color={ $color }]{ $tempC } °C ({ $temperature } К)[/color]
-air-alarm-ui-window-alarm-state = [color={ $color }]{-air-alarm-state-name(state:$state)}[/color]
-air-alarm-ui-window-alarm-state-indicator = Статус: [color={ $color }]{-air-alarm-state-name(state:$state)}[/color]
+air-alarm-ui-window-alarm-state = [color={ $color }]{ $state }[/color]
+air-alarm-ui-window-alarm-state-indicator = Статус: [color={ $color }]{ $state }[/color]
 air-alarm-ui-window-tab-vents = Вентиляции
 air-alarm-ui-window-tab-scrubbers = Скрубберы
 air-alarm-ui-window-tab-sensors = Сенсоры
@@ -38,6 +39,7 @@ air-alarm-ui-mode-panic = Паника
 air-alarm-ui-mode-none = Нет
 
 ## Widgets
+
 
 ### General
 
@@ -57,7 +59,7 @@ air-alarm-ui-vent-internal-bound-label = Внутренняя граница
 ### Scrubbers
 
 air-alarm-ui-scrubber-pump-direction-label = Направление
-air-alarm-ui-scrubber-volume-rate-label = Объём (Л)
+air-alarm-ui-scrubber-volume-rate-label = Объем (Л)
 air-alarm-ui-scrubber-wide-net-label = ШирокаяСеть
 
 ### Thresholds

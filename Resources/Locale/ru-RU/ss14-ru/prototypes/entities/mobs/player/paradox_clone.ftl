@@ -1,6 +1,6 @@
-ent-MobParadox = пространственно-временной парадокс
-    .desc = Большой шар из шатких-валких, временных-швременных фиговин.
+ent-MobParadox = Временной парадокс
+    .desc = Большой клубок вихляющих, временных и не временных вещей.
 ent-MobParadoxTimed = { ent-MobParadox }
     .desc = { ent-MobParadox.desc }
-ent-ParadoxCloneDummy = Парадоксальный клон
+ent-ParadoxCloneDummy = Парадоксальный Клон
     .desc = { "" }

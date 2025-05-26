@@ -5,7 +5,7 @@ alerts-low-nitrogen-desc = В воздухе, которым вы дышите, 
 alerts-high-toxin-name = [color=red]Высокий уровень токсинов[/color]
 alerts-high-toxin-desc = В воздухе, которым вы дышите, [color=red]слишком много токсинов[/color]. Используйте [color=green]дыхательную маску и баллон[/color] или покиньте отсек.
 alerts-low-pressure-name = [color=red]Низкий уровень давления[/color]
-alerts-low-pressure-desc = Воздух вокруг вас [color=red]опасно разрежён[/color]. [color=green]Космический скафандр[/color] защитит вас.
+alerts-low-pressure-desc = Воздух вокруг вас [color=red]опасно разрежен[/color]. [color=green]Космический скафандр[/color] защитит вас.
 alerts-high-pressure-name = [color=red]Высокий уровень давления[/color]
 alerts-high-pressure-desc = Воздух вокруг вас [color=red]опасно плотный[/color]. [color=green]Герметичный костюм[/color] будет достаточной защитой.
 alerts-on-fire-name = [color=red]В огне[/color]
@@ -33,7 +33,7 @@ alerts-crit-desc = Вы серьёзно ранены и без сознания
 alerts-dead-name = Смерть
 alerts-dead-desc = Вы мертвы. Учтите, что вас ещё можно воскресить!
 alerts-health-name = Здоровье
-alerts-health-desc = [color=green]Зелёный[/color] хорошо. [color=red]Красный[/color] плохо.
+alerts-health-desc = [color=green]Синий и зелёный[/color] хорошо. [color=red]Красный[/color] плохо.
 alerts-battery-name = Батарея
 alerts-battery-desc = Если батарея разрядится, вы не сможете использовать свои способности.
 alerts-no-battery-name = Нет батареи
@@ -55,9 +55,9 @@ alerts-parched-desc = Вы ужасно хотите пить. Жажда вас
 alerts-muted-name = Заглушены
 alerts-muted-desc = Вы потеряли способность говорить.
 alerts-vow-silence-name = Обет молчания
-alerts-vow-silence-desc = Вы дали обет, запрещающий устное или письменное общение, в рамках инициации в Мистико Тагма Мимон. Щёлкните по иконке, чтобы нарушить свой обет.
+alerts-vow-silence-desc = Вы дали обет молчания в рамках инициации в Мистико Тагма Мимон. Щёлкните по иконке, чтобы нарушить свой обет.
 alerts-vow-broken-name = Нарушенный обет
-alerts-vow-broken-desc = Вы нарушили свою клятву, данную Мимам. Теперь вы можете говорить и писать, но вы потеряли свои мимские способности как минимум на 5 минут!!! Щёлкните по иконке, чтобы попытаться дать обет молчания снова.
+alerts-vow-broken-desc = Вы нарушили свою клятву, данную Мимам. Теперь вы можете говорить, но вы потеряли свои мимские способности как минимум на 5 минут!!! Щёлкните по иконке, чтобы попытаться дать обет молчания снова.
 alerts-pulled-name = Вас тянут
 alerts-pulled-desc = Вас тянут за собой. Двигайтесь, чтобы освободиться.
 alerts-pulling-name = Вы тянете

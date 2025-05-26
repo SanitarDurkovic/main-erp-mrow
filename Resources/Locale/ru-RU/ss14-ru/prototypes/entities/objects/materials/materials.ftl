@@ -1,5 +1,5 @@
 ent-MaterialBase = { ent-BaseItem }
-    .desc = Сырьё.
+    .desc = Сырье.
 ent-MaterialCardboard = картон
     .suffix = Полный
     .desc = { ent-MaterialBase.desc }
@@ -83,7 +83,7 @@ ent-MaterialToothSpaceCarp1 = { ent-MaterialToothSpaceCarp }
     .suffix = 1
     .desc = { ent-MaterialToothSpaceCarp.desc }
 ent-MaterialToothSharkminnow = зуб карпоакулы
-    .desc = Выглядит остро. Достаточно остро, чтобы выколоть кому-нибудь глаз. Чёрт возьми, он огромный.
+    .desc = Выглядит остро. Достаточно остро, чтобы выколоть кому-нибудь глаз. Черт возьми, он огромный.
     .suffix = Полный
 ent-MaterialToothSharkminnow1 = { ent-MaterialToothSharkminnow }
     .suffix = 1

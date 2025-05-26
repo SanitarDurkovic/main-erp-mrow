@@ -1,5 +1,6 @@
 # Commands
 
+
 ## Delay shuttle round end
 
 emergency-shuttle-command-round-desc = Останавливает таймер окончания раунда, когда эвакуационный шаттл покидает гиперпространство.
@@ -14,7 +15,7 @@ emergency-shuttle-command-dock-desc = Вызывает спасательный 
 
 emergency-shuttle-command-launch-desc = Досрочно запускает эвакуационный шаттл, если это возможно.
 # Emergency shuttle
-emergency-shuttle-left = Эвакуационный шаттл покинул станцию. Расчётное время прибытия шаттла на станцию Центкома — { $transitTime } секунд.
+emergency-shuttle-left = Эвакуационный шаттл покинул станцию. Расчётное время прибытия шаттла на станцию Центкома - { $transitTime } секунд.
 emergency-shuttle-launch-time = Эвакуационный шаттл будет запущен через { $consoleAccumulator } секунд.
 emergency-shuttle-docked = Эвакуационный шаттл пристыковался к станции { $location }, направление: { $direction }. Он улетит через { $time } секунд.{ $extended }
 emergency-shuttle-good-luck = Эвакуационный шаттл не может найти станцию. Удачи.
@@ -36,7 +37,7 @@ emergency-shuttle-console-auth-revoked =
     }.
 emergency-shuttle-console-denied = Доступ запрещён
 # UI
-emergency-shuttle-console-window-title = Консоль эвакуационного шаттла
+emergency-shuttle-console-window-title = консоль эвакуационного шаттла
 emergency-shuttle-ui-engines = ДВИГАТЕЛИ:
 emergency-shuttle-ui-idle = Простой
 emergency-shuttle-ui-repeal-all = Отменить все

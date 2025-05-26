@@ -1,6 +1,6 @@
 ## UI
 
-cloning-console-window-title = Консоль клонирования
+cloning-console-window-title = консоль клонирования
 cloning-console-window-clone-button-text = Клонировать
 cloning-console-window-scanner-id = ID: [color=white]{ $scannerOccupantName }[/color]
 cloning-console-window-pod-id = ID: [color=white]{ $podOccupantName }[/color]
@@ -26,5 +26,5 @@ cloning-console-component-msg-incomplete = Не готово: Клонирова
 cloning-console-component-msg-no-cloner = Не готово: Клонер не обнаружен
 cloning-console-component-msg-no-mind = Не готово: Душа неактивна
 cloning-console-chat-error = ОШИБКА: НЕХВАТКА БИОМАССЫ. КЛОНИРОВАНИЕ ЭТОГО ТЕЛА ТРЕБУЕТ { $units } ЕДИНИЦ БИОМАССЫ.
-cloning-console-uncloneable-trait-error = ОШИБКА: КЛОНИРОВАНИЕ НЕВОЗМОЖНО ИЗ-ЗА АНОМАЛЬНОГО СТРОЕНИЯ ТЕЛА.
+cloning-console-uncloneable-trait-error = ОШИБКА: ДУША ОТСУТСТВУЕТ, КЛОНИРОВАНИЕ НЕВОЗМОЖНО.
 cloning-console-cellular-warning = ВНИМАНИЕ: ОЦЕНКА ДОСТОВЕРНОСТИ ЦЕЛОСТНОСТИ ГЕНОВ СОСТАВЛЯЕТ { $percent }%. КЛОНИРОВАНИЕ МОЖЕТ ПРИВЕСТИ К НЕОЖИДАННЫМ РЕЗУЛЬТАТАМ.

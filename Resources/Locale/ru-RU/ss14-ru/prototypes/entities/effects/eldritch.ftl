@@ -1,2 +1,2 @@
-ent-EffectVoidBlink = мерцание пустоты
+ent-EffectVoidBlink = пустотное мерцание
     .desc = { "" }

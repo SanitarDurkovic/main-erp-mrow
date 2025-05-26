@@ -130,6 +130,6 @@ tiles-mowed-astro-grass = астро-газон
 tiles-jungle-astro-grass = астро-трава джунглей
 tiles-astro-ice = астро-лёд
 tiles-astro-snow = астро-снег
-tiles-astro-asteroid-sand = астро-песок астероида
+tiles-astro-asteroid-sand = астероидный астро-песок
 tiles-astro-asteroid-sand-borderless = borderless asteroid astro-sand
 tiles-wood-large = большой деревянный пол

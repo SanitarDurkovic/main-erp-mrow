@@ -2,7 +2,7 @@
   id: Ipc
   name: species-name-Ipc
   roundStart: true
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorTier: 4
   prototype: MobIpc
   sprites: MobIpcSprites
   defaultSkinTone: "#eb943d"
@@ -53,9 +53,6 @@
       defaultMarkings: [ OrangeS ]
     HeadTop:
       points: 2
-      required: true
-    UndergarmentTop:
-      points: 1
       required: true
 
 

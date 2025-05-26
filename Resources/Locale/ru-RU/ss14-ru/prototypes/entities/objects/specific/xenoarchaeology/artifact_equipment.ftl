@@ -1,4 +1,4 @@
 ent-CrateArtifactContainer = контейнер артефактов
     .desc = Используется для безопасного хранения и перемещения артефактов.
-ent-HandheldArtifactContainer = handheld artifact container
-    .desc = A handheld case used to safely contain and move small artifacts.
+ent-HandheldArtifactContainer = ручной контейнер для артефактов
+    .desc = Ручной кейс, используемый для безопасного хранения и перемещения небольших артефактов.

@@ -7,4 +7,4 @@ seed-component-plant-potency-text = Потенция растения: [color=li
 botany-seed-packet-name = пакет { $seedNoun } ({ $seedName })
 botany-harvest-fail-message = Вам не удаётся собрать ничего полезного.
 botany-harvest-success-message = Вы собираете урожай с { $name }
-botany-mysterious-description-addon = Однако, что-то в нём кажется странным.
+botany-mysterious-description-addon = Однако, что-то в нем кажется странным.

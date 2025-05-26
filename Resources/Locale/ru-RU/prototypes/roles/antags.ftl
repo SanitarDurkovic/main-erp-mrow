@@ -1,7 +1,7 @@
-roles-antag-generic-solo-antagonist-name = Соло-антагонист
+roles-antag-generic-solo-antagonist-name = Одиночный антагонист
 roles-antag-generic-free-agent-name = Свободный агент
 roles-antag-generic-team-antagonist-name = Командный антагонист
-roles-antag-generic-silicon-antagonist-name = Синтетик антагонист
+roles-antag-generic-silicon-antagonist-name = РОБО/Силиконовый антагонист
 roles-antag-syndicate-agent-name = Агент Синдиката
 roles-antag-syndicate-agent-objective = Выполните свои задачи и не попадитесь.
 roles-antag-syndicate-agent-sleeper-name = Спящий агент Синдиката
@@ -27,6 +27,6 @@ roles-antag-space-ninja-objective = Используйте свою скрытн
 roles-antag-paradox-clone-name = Парадоксальный клон
 roles-antag-paradox-clone-objective = Странная пространственно-временная аномалия телепортировала вас в другую реальность! Теперь вам предстоит найти своего двойника, убить и заменить его.
 roles-antag-thief-name = Вор
-roles-antag-thief-objective = Пополните свою личную коллекцию имуществом Nanotrasen, не прибегая к насилию.
+roles-antag-thief-objective = Пополните свою личную коллекцию имуществом NanoTrasen, не прибегая к насилию.
 roles-antag-dragon-name = Космический дракон
 roles-antag-dragon-objective = Создайте армию карпов для захвата квадранта.

@@ -1,10 +1,10 @@
-ent-Turnstile = turnstile
-    .desc = A mechanical door that permits one-way access and prevents tailgating.
+ent-Turnstile = турникет
+    .desc = Механическая дверь, которая обеспечивает односторонний доступ и предотвращает проход "хвостом".
 ent-TurnstileArrow = { "" }
     .desc = { "" }
 ent-TurnstileGenpopEnter = { ent-Turnstile }
-    .suffix = Genpop Enter
+    .suffix = Вход для общего контингента
     .desc = { ent-Turnstile.desc }
 ent-TurnstileGenpopLeave = { ent-Turnstile }
-    .suffix = Genpop Leave
+    .suffix = Выход для общего контингента
     .desc = { ent-Turnstile.desc }

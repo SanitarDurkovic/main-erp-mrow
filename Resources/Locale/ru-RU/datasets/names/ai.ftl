@@ -36,7 +36,7 @@ names-ai-dataset-31 = К.Р.Э.Й.Г.
 names-ai-dataset-32 = Крэй-2
 # If we're going to have AOL we may as well have some of their major competitors
 names-ai-dataset-33 = КомпСерп
-names-ai-dataset-34 = Компьютер
+names-ai-dataset-34 = Консоль
 names-ai-dataset-35 = Милаш
 names-ai-dataset-36 = Дедал
 # names-ai-dataset-37 = DecTalk
@@ -49,7 +49,7 @@ names-ai-dataset-42 = Эмма-2
 names-ai-dataset-43 = ЭНИАК
 names-ai-dataset-44 = Эразм
 names-ai-dataset-45 = Абсолют
-names-ai-dataset-46 = Лег-Ко-27
+names-ai-dataset-46 = Лёг-Ко-27
 names-ai-dataset-47 = КОМПДРУГ
 names-ai-dataset-48 = Судьба
 names-ai-dataset-49 = Фи
@@ -61,7 +61,7 @@ names-ai-dataset-54 = Гелиос
 names-ai-dataset-55 = УлейБот Сверхразум
 names-ai-dataset-56 = Хьюи
 # A play on the fad apple spawned of putting "i" infront of your tech products name
-names-ai-dataset-57 = айЯдро
+names-ai-dataset-57 = айИИ
 # Hell on earth (web browser)
 names-ai-dataset-58 = I.E. 6
 names-ai-dataset-59 = Икар
@@ -81,14 +81,12 @@ names-ai-dataset-70 = Макс 404
 names-ai-dataset-71 = Металоголовый
 names-ai-dataset-72 = М.И.М.И.
 names-ai-dataset-73 = МК УЛЬТРА
-names-ai-dataset-74 = Монарх
+names-ai-dataset-74 = МаММи
 names-ai-dataset-75 = Дурной3000
 names-ai-dataset-76 = Мультивак
-# names-ai-dataset-77 = NCH
 # A play on both NT as in NanoTrasen and NT as in windows NT, of which version 6.0 is windows vista
 names-ai-dataset-78 = NT v6.0
 names-ai-dataset-79 = Пакард Бэлл
-# names-ai-dataset-80 = PTO
 names-ai-dataset-81 = Проект Y2K
 names-ai-dataset-82 = Откровение
 names-ai-dataset-83 = РобоДьявол
