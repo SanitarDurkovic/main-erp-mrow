@@ -35,17 +35,14 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
-//LOP edit start
+// LOP edit start
 using Content.Shared._NewParadise.TTS;
 #if LOP
 using Content.Client._NewParadise.Sponsors;
 #endif
-
 #if LOP
 using Content.Shared._ERPModule.Data;
 #endif
-
-//LOP edit end
 
 namespace Content.Client.Lobby.UI
 {
@@ -661,7 +658,7 @@ namespace Content.Client.Lobby.UI
 #endif
             // LOP edit end
 
-            _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart && o.SponsorTier <= sponsorTier));  //LOP edit
+            _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart && o.SponsorTier <= sponsorTier));  // LOP edit
             var speciesIds = _species.Select(o => o.ID).ToList();
 
             for (var i = 0; i < _species.Count; i++)
@@ -1716,7 +1713,7 @@ namespace Content.Client.Lobby.UI
 
             try
             {
-                //LOP edit start
+                // LOP edit start
                 List<string> marks = new();
 #if LOP
                 int sponsorTier = 0;
@@ -1736,7 +1733,7 @@ namespace Content.Client.Lobby.UI
                 , sponsorTier
 #endif
                 );
-                //LOP edit end
+                // LOP edit end
 
                 var oldProfile = Profile;
                 SetProfile(profile, CharacterSlot);
