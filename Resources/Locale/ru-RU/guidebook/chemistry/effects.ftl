@@ -235,16 +235,16 @@ reagent-effect-guidebook-drunk =
         [1] Вызывает
        *[other] вызывают
     } опьянение
-reagent-effect-guidebook-emote =
-    { $chance ->
-        [1] Will force
-       *[other] force
-    } the metabolizer to [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-electrocute =
     { $chance ->
         [1] Бьёт током
        *[other] бьют током
     } употребившего в течении { NATURALFIXED($time, 3) }
+reagent-effect-guidebook-emote =
+    { $chance ->
+        [1] Will force
+       *[other] force
+    } the metabolizer to [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-extinguish-reaction =
     { $chance ->
         [1] Гасит
