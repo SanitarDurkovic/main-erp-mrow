@@ -134,7 +134,7 @@ public sealed class BanPanelEui : BaseEui
                 }
                 else
                 {
-                    _sawmill.Warning($"{Player.Name} ({Player.UserId}) tried to issue a job ban with an invalid job: {role}");
+                    _sawmill.Warning($"{Player.Name} ({Player.UserId}) tried to issue a job ban with an invalid job: {job}");
                 }
             }
             _banManager.WebhookUpdateRoleBans(targetUid, target, Player.UserId, null, targetHWid, minutes, severity, reason, now, banids);
