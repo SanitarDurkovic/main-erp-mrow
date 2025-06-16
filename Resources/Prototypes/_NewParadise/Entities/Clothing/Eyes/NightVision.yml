@@ -107,8 +107,9 @@
   description: Toggles the NVG on and off.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
+  - type: InstantAction
     event: !type:ToggleLoPNightVisionEvent
 
 - type: entity
@@ -116,7 +117,7 @@
   parent: ActionBaseToggleNightVision
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     icon: { sprite: _NewParadise/Clothing/Eyes/NVG/nightvision.rsi, state: toggle-on }
     iconOn: { sprite: _NewParadise/Clothing/Eyes/NVG/nightvision.rsi, state: toggle-off }
 
