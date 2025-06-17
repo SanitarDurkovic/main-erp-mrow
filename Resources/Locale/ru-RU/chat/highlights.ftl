@@ -6,8 +6,7 @@ highlights-head-of-security = Глава Службы Безопасности, 
 highlights-quartermaster = Квартирмейстер, "КМ", Снабжение, Мостик, Командование
 highlights-research-director = Научный Директор, "НД", Наука, "НИО", Мостик, Командование
 # Security
-# Frontier: matches by job title, moved to _NF
-# highlights-detective = Детектив, "Дек", Безопасность, "СБ"
+highlights-detective = Детектив, "Дек", Безопасность, "СБ"
 highlights-security-cadet = Кадет СБ, Сотрудник СБ, Кадет, Безопасность, "СБ"
 highlights-security-officer = СБ, Офицер СБ, Офицер, Безопасность, "СБ"
 highlights-warden = Начальник тюрьмы, "Начальник", Безопасность, "СБ"
