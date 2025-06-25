@@ -186,3 +186,12 @@
   id: 16
   time: '2025-06-17T21:02:02.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/55
+- author: PowerKAT
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u0430\u0442\u043C\u043E\u0441\
+      \ \u043D\u0430 \u043A\u0430\u0440\u0442\u0435 \u0421\u0442\u0430\u043D\u0414\
+      \u0430\u0440\u0442."
+    type: Tweak
+  id: 17
+  time: '2025-06-25T20:49:08.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/60
