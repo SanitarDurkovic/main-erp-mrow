@@ -108,6 +108,8 @@
   - type: AltFireMelee
     attackType: Light
   # LOP edit end
+  - type: StaticPrice
+    price: 1000
 
 - type: entity
   name: echis
@@ -196,6 +198,8 @@
   - type: AltFireMelee
     attackType: Light
   # LOP edit end
+  - type: StaticPrice
+    price: 1500
 
 - type: entity
   name: mk 58
