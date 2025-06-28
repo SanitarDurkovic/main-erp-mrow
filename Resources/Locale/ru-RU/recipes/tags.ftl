@@ -61,6 +61,8 @@ construction-graph-tag-match-stick = спичка
 construction-graph-tag-potato = картофель
 construction-graph-tag-wheat-bushel = сноп пшеницы
 construction-graph-tag-corgi-hide = шкура корги
+construction-graph-tag-apron = фартук
+construction-graph-tag-utility-belt = рабочий пояс
 soil-construction-graph-any-mushroom = любые мухоморы
 # toys
 construction-graph-tag-rubber-ducky = резиновая уточка
@@ -126,3 +128,5 @@ construction-graph-tag-fire-extinguisher = огнетушитель
 construction-graph-tag-fire-helmet = пожарный шлем
 # salvage
 construction-graph-tag-spationaut-hardsuit = скафандр
+# clothing
+construction-graph-tag-backpack = рюкзак

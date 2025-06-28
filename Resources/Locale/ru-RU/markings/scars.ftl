@@ -18,3 +18,7 @@ marking-ScarFace1-scar_face_1 = Шрам на лице
 marking-ScarFace1 = Шрам на лице (Большой)
 marking-ScarFace2-scar_face_2 = Шрам на лице
 marking-ScarFace2 = Шрам на лице (Маленький)
+marking-ScarEyeRightSmall-scar_eye_right_small = Шрам у правого глаза (малый)
+marking-ScarEyeRightSmall = Малый шрам у глаза (правый)
+marking-ScarEyeLeftSmall-scar_eye_left_small = Шрам у левого глаза (малый)
+marking-ScarEyeLeftSmall = Малый шрам у глаза (левый)

@@ -13,6 +13,7 @@
     tags:
     - SuitEVA
     - MonkeyWearable
+    - CorgiWearable
     - WhitelistChameleon
     - HidesTail # LOP edit
 
@@ -33,6 +34,8 @@
     - MonkeyWearable
     - WhitelistChameleon
     - HidesTail # LOP edit
+  - type: StaticPrice
+    price: 1000 # Helmet is 500
 
 #Emergency EVA
 - type: entity
@@ -58,6 +61,12 @@
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - MonkeyWearable
+    - HidesTail # LOP edit
+    - WhitelistChameleon
 
 #Prisoner EVA
 - type: entity
@@ -155,3 +164,8 @@
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - HidesTail # LOP edit
+    - WhitelistChameleon

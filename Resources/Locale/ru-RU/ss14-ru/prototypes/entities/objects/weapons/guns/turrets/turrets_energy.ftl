@@ -1,4 +1,11 @@
-ent-WeaponEnergyTurretStation = турель-часовой
-    .desc = Высокотехнологичная автономная система вооружения, разработанная для предотвращения доступа постороннего персонала в зоны ограниченного доступа.
+ent-WeaponEnergyTurretStationBase = охранная турель
+    .desc = Высокотехнологичная автономная система вооружения, предназначенная для предотвращения доступа посторонних лиц в особо важные зоны.
+ent-WeaponEnergyTurretSecurity = { ent-WeaponEnergyTurretStationBase }
+    .suffix = Охрана
+    .desc = { ent-WeaponEnergyTurretStationBase.desc }
+ent-WeaponEnergyTurretCommand = { ent-WeaponEnergyTurretStationBase }
+    .suffix = Командование
+    .desc = { ent-WeaponEnergyTurretStationBase.desc }
 ent-WeaponEnergyTurretAI = турель-часовой ИИ
     .desc = Высокотехнологичная автономная система вооружения под прямым контролем местного искусственного интеллекта.
+    .suffix = ИИ, Борг

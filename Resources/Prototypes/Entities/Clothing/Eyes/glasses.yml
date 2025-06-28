@@ -68,6 +68,10 @@
   - type: ClothingGrantComponent # imp
     component:
     - type: SupermatterHallucinationImmune
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingEyesBase
@@ -127,6 +131,8 @@
     sprite: Clothing/Eyes/Glasses/outlawglasses.rsi
   - type: VisionCorrection
   - type: IdentityBlocker
+  - type: StaticPrice
+    price: 500
 
 - type: entity
   parent: ClothingEyesBase
@@ -141,6 +147,7 @@
   - type: Tag
     tags:
     - HamsterWearable
+    - CorgiWearable
     - WhitelistChameleon
   - type: IdentityBlocker
     coverage: EYES
@@ -157,6 +164,7 @@
   - type: Tag
     tags:
     - Sunglasses
+    - CorgiWearable
     - HamsterWearable
     - WhitelistChameleon
 
@@ -179,6 +187,7 @@
   - type: Tag
     tags:
     - HamsterWearable
+    - CorgiWearable
     - WhitelistChameleon
   - type: GuideHelp
     guides:
@@ -203,6 +212,7 @@
   - type: Tag
     tags:
     - HamsterWearable
+    - CorgiWearable
     - WhitelistChameleon
   - type: IdentityBlocker
     coverage: EYES
@@ -256,6 +266,10 @@
     - type: SolutionScanner
     - type: IdentityBlocker
       coverage: EYES
+    - type: Tag
+      tags:
+      - CorgiWearable
+      - WhitelistChameleon
 
 - type: entity
   parent: [ClothingEyesBase, BaseMajorContraband]
