@@ -14,6 +14,9 @@ panic_bunker.min_account_age = 1440
 [server]
 rules_file = "LPPRulesetNon"
 
+[ic]
+flavor_text = true
+
 [rules]
 time = 60.0
 
@@ -42,10 +45,13 @@ arrivals_planet = false
 emergency_early_launch_allowed = true
 
 [admin]
+admins_count_in_playercount = true
 see_own_notes = true
 
 [ahelp]
 admin_prefix = true
+rate_limit_count = 2
+rate_limit_period = 10
 admin_prefix_webhook = true
 
 [discord]
