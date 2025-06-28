@@ -1,12 +1,12 @@
-ent-FloorTileItemWoodParquet = tiles-wood-parquet
+ent-FloorTileItemWoodParquet = { ent-FloorTileItemBase }
     .desc = { ent-FloorTileItemBase.desc }
-ent-FloorTileItemWoodBlack = tiles-wood-black
+ent-FloorTileItemWoodBlack = { ent-FloorTileItemBase }
     .desc = { ent-FloorTileItemBase.desc }
-ent-FloorTileItemWoodDark = tiles-wood-dark
+ent-FloorTileItemWoodDark = { ent-FloorTileItemBase }
     .desc = { ent-FloorTileItemBase.desc }
-ent-FloorTileItemWoodLight = tiles-wood-light
+ent-FloorTileItemWoodLight = { ent-FloorTileItemBase }
     .desc = { ent-FloorTileItemBase.desc }
-ent-FloorTileItemWoodRed = tiles-wood-red
+ent-FloorTileItemWoodRed = { ent-FloorTileItemBase }
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemWoodLargeBlack = large black wood floor
     .desc = { ent-FloorTileItemBase.desc }
