@@ -1,4 +1,4 @@
-﻿ent-SpiderWebBase = { "" }
+ent-SpiderWebBase = { "" }
     .desc = { "" }
 ent-SpiderWeb = паутина
     .desc = Она волокнистая и липкая.

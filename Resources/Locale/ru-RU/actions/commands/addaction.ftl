@@ -1,4 +1,4 @@
-﻿# addaction
+# addaction
 cmd-addaction-desc = Добавляет действие целевой сущности. Действие не будет работать, если цель требует дополнительный компонент на своей сущности (например, Пожирание Дракона).
 cmd-addaction-help = addaction <EntityUid> <ActionPrototype>
 cmd-addaction-invalid-args = Ожидалось ровно 2 аргумента.

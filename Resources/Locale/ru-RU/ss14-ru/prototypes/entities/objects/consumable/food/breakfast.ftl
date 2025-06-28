@@ -1,4 +1,4 @@
-﻿ent-FoodBreakfastBase = { ent-FoodInjectableBase }
+ent-FoodBreakfastBase = { ent-FoodInjectableBase }
     .desc = Полноценный завтрак, подъём!
 ent-FoodBreakfastAmerican = полноценный американский завтрак
     .desc = Огромная тарелка белка и углеводов, которая скорее уложит вас обратно в постель, чем вытащит из неё. О, что это за кошмар?

@@ -1,4 +1,4 @@
-﻿parse-bool-fail = Невозможно разобрать { $arg } как логическое значение
+parse-bool-fail = Невозможно разобрать { $arg } как логическое значение
 parse-float-fail = Невозможно разобрать { $arg } как число с плавающей запятой
 cmd-lockeyes-desc = Предотвращает дальнейшее вращение глаз.
 cmd-lockeyes-help = Использование: lockeyes <true/false>

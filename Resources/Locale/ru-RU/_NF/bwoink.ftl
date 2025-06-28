@@ -1,2 +1,2 @@
-﻿# Frontier
+# Frontier
 bwoink-message-discord = (ДС)
