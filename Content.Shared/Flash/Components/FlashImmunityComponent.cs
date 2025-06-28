@@ -7,7 +7,6 @@ namespace Content.Shared.Flash.Components;
 /// When given to clothes in the "head", "eyes" or "mask" slot it protects the wearer.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(SharedFlashSystem))]
 public sealed partial class FlashImmunityComponent : Component
 {
     /// <summary>
@@ -15,4 +14,8 @@ public sealed partial class FlashImmunityComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool Enabled = true;
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("protectionRange")]
+    public float ProtectionRange { get; set; } = 0f;
 }

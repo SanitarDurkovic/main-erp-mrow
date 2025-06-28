@@ -5,6 +5,7 @@ using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Flash.Components;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction.Events;
+using Content.Shared._Goobstation.Flashbang; // Goob edit
 using Content.Shared.Inventory;
 using Content.Shared.Light;
 using Content.Shared.Popups;
@@ -158,14 +159,20 @@ public abstract class SharedFlashSystem : EntitySystem
         if (attempt.Cancelled)
             return;
 
+        // Goob edit start
+        var multiplierEv = new FlashDurationMultiplierEvent();
+        RaiseLocalEvent(target, multiplierEv);
+        var multiplier = multiplierEv.Multiplier;
+        // Goob edit end
+
         // don't paralyze, slowdown or convert to rev if the target is immune to flashes
-        if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, flashDuration, true))
+        if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, flashDuration * multiplier, true)) // Goob edit
             return;
 
         if (stunDuration != null)
-            _stun.TryParalyze(target, stunDuration.Value, true);
+            _stun.TryKnockdown(target, stunDuration.Value * multiplier, true); // Goob edit
         else
-            _stun.TrySlowdown(target, flashDuration, true, slowTo, slowTo);
+            _stun.TrySlowdown(target, flashDuration * multiplier, true, slowTo, slowTo); // Goob edit
 
         if (displayPopup && user != null && target != user && Exists(user.Value))
         {
