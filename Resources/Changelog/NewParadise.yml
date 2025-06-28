@@ -252,3 +252,11 @@
   id: 21
   time: '2025-06-28T10:27:58.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/64
+- author: PowerKAT
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0421\u0442\
+      \u0430\u043D\u0414\u0430\u0440\u0442!"
+    type: Fix
+  id: 22
+  time: '2025-06-28T11:54:25.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/65
