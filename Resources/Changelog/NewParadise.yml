@@ -260,3 +260,11 @@
   id: 22
   time: '2025-06-28T11:54:25.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/65
+- author: MegaDaimond
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D \u0441\u043F\u0440\
+      \u0430\u0439\u0442 \u043D\u043E\u0433 \u0443\u043D\u0430\u0442\u0445\u043E\u0432"
+    type: Fix
+  id: 23
+  time: '2025-06-28T12:25:31.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/66
