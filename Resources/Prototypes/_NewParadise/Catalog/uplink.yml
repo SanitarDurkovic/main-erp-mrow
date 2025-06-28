@@ -57,7 +57,7 @@
   id: LPPUplinkBimagpistolboxSyndie
   name: uplink-catalog-pistol-bigmagazinebox-name
   description: uplink-catalog-pistol-bigmagazinebox-desc
-  icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi, state: red }
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi, state: base }
   productEntity: BoxMagazinePistolHighCapacity
   cost:
     Telecrystal: 4
