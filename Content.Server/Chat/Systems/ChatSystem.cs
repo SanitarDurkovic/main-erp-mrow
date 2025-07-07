@@ -257,9 +257,11 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.Emote:
                 SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
+            // LOP edit start
             case InGameICChatType.HiddenEmote:
                 SendHiddenEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
+            // LOP edit end
         }
     }
 
@@ -609,6 +611,7 @@ public sealed partial class ChatSystem : SharedChatSystem
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {ToPrettyString(source):user}: {action}");
     }
 
+    // LOP edit start
     private void SendHiddenEntityEmote(
         EntityUid source,
         string action,
@@ -643,8 +646,10 @@ public sealed partial class ChatSystem : SharedChatSystem
             var entRange = MessageRangeCheck(session, data, range);
             if (entRange == MessageRangeCheckResult.Disallowed)
                 continue;
-            var entHideChat = entRange == MessageRangeCheckResult.HideChat;
-            _chatManager.ChatMessageToOne(ChatChannel.HiddenEmotes, action, wrappedMessage, source, false, session.Channel);
+            if (data.Range <= hiddenEmoteRange)
+            {
+                _chatManager.ChatMessageToOne(ChatChannel.HiddenEmotes, action, wrappedMessage, source, false, session.Channel);
+            }
         }
         if (!hideLog)
             if (name != Name(source))
@@ -652,6 +657,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             else
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Hidden emote from {ToPrettyString(source):user}: {action}");
     }
+    // LOP edit end
 
     // ReSharper disable once InconsistentNaming
     private void SendLOOC(EntityUid source, ICommonSession player, string message, bool hideChat)
