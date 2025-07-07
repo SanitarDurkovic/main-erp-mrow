@@ -577,6 +577,9 @@ MagazineBoxCaselessRifle10x24: null
 MagazineBoxCaselessRifleBig: null
 MagazinePistolHighCapacityRubber: null
 
+# 2025-03-12
+SmartFridge: DVSmartFridgeMedical
+
 # 2025-03-18
 EpinephrineChemistryBottle: ChemistryBottleEpinephrine
 RobustHarvestChemistryBottle: ChemistryBottleRobustHarvest
@@ -738,6 +741,9 @@ BarSignEmprahAlignTile: BarSignEmprah
 BarSignSpacebucksAlignTile: BarSignSpacebucks
 BarSignMaltroachAlignTile: BarSignMaltroach
 BarSignWhiskeyEchoesAlignTile: BarSignWhiskeyEchoes
+
+# 2025-06-17 Corvax
+ClothingUniformColorJumpskirtRainbow: ClothingUniformJumpskirtColorRainbow
 
 # 2025-06-21
 ClothingNeckHeadphones: ClothingMultipleHeadphones
