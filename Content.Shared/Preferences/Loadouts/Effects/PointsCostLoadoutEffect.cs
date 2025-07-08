@@ -16,7 +16,11 @@ public sealed partial class PointsCostLoadoutEffect : LoadoutEffect
         LoadoutPrototype proto, // Corvax-Sponsors
         ICommonSession? session,
         IDependencyCollection collection,
-        [NotNullWhen(false)] out FormattedMessage? reason)
+        [NotNullWhen(false)] out FormattedMessage? reason
+        #if LOP
+        , int sponsorTier = 0
+        #endif
+        )
     {
         reason = null;
         var protoManager = collection.Resolve<IPrototypeManager>();

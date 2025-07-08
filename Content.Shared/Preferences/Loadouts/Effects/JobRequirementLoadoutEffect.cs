@@ -15,9 +15,18 @@ public sealed partial class JobRequirementLoadoutEffect : LoadoutEffect
     [DataField(required: true)]
     public JobRequirement Requirement = default!;
 
-    public override bool Validate(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutPrototype proto, ICommonSession? session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason)
+    public override bool Validate(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutPrototype proto, ICommonSession? session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason
+    #if LOP
+    , int sponsorTier = 0
+    #endif
+    )
     {
-        if (session == null)
+        if (session == null
+        #if LOP
+        || sponsorTier >= 5
+        #endif
+        )
+
         {
             reason = FormattedMessage.Empty;
             return true;
@@ -29,6 +38,10 @@ public sealed partial class JobRequirementLoadoutEffect : LoadoutEffect
             collection.Resolve<IPrototypeManager>(),
             profile,
             playtimes,
-            out reason);
+            out reason
+            #if LOP
+            , sponsorTier
+            #endif
+            );
     }
 }
