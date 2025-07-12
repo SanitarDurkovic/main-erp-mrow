@@ -205,6 +205,23 @@
   - node: dragon steak
     entity: FoodMeatDragonCooked
 
+# LOP edit start
+- type: constructionGraph
+  id: FoodMeatSnakeCooked
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: cooked snake meat
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: cooked snake meat
+    entity: FoodMeatSnakeCooked
+# LOP edit end
+
 # cutlets
 
 - type: constructionGraph

@@ -649,6 +649,12 @@
           Quantity: 10
         - ReagentId: Toxin
           Quantity: 2
+  # LOP edit start
+  - type: Construction 
+    graph: FoodMeatSnakeCooked
+    node: start
+    defaultTarget: cooked snake meat
+  # LOP edit end
   - type: Item
     inhandVisuals:
       left:
@@ -1592,6 +1598,39 @@
       - state: dragon-cooked-inhand-left
       right:
       - state: dragon-cooked-inhand-right
+
+# LOP edit start
+- type: entity
+  name: cooked snake meat
+  parent: FoodMeatBase
+  id: FoodMeatSnakeCooked
+  description: A long piece of snake meat, now not poisonous.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    state: snake-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 10
+  - type: FoodSequenceElement
+    entries:
+      Skewer: SkewerSnake
+  - type: Construction
+    graph: FoodMeatSnakeCooked
+    node: cooked snake meat
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: snake-inhand-left
+      right:
+      - state: snake-inhand-right
+# LOP edit end
 
 # Cutlets
 

@@ -854,6 +854,7 @@
     - Vegetable
   - type: FoodSequenceElement
     entries:
+      Skewer: PotatoSkewer # LOP edit
       Burger: Potato
       Taco: Potato
 
@@ -1313,6 +1314,11 @@
     tags:
     - Vegetable
     - Mushroom
+  # LOP edit start
+  - type: FoodSequenceElement
+    entries:
+     Skewer: MushroomSkewer
+  # LOP edit end
 
 # Slices
 
