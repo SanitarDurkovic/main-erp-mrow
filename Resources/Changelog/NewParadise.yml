@@ -734,3 +734,11 @@
   id: 62
   time: '2025-07-18T20:45:16.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/131
+- author: PowerKAT
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D \u0422\u0435\u0440\u043C\u0438\
+      \u043D\u0430\u043B!"
+    type: Tweak
+  id: 63
+  time: '2025-07-20T14:54:28.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/132
