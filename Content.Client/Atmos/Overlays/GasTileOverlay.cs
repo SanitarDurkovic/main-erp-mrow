@@ -23,7 +23,6 @@ namespace Content.Client.Atmos.Overlays
 
         private readonly IEntityManager _entManager;
         private readonly IMapManager _mapManager;
-        private readonly SharedMapSystem _mapSystem;
         private readonly SharedTransformSystem _xformSys;
 
         public override OverlaySpace Space => OverlaySpace.WorldSpaceEntities | OverlaySpace.WorldSpaceBelowWorld;
@@ -54,7 +53,6 @@ namespace Content.Client.Atmos.Overlays
         {
             _entManager = entManager;
             _mapManager = IoCManager.Resolve<IMapManager>();
-            _mapSystem = entManager.System<SharedMapSystem>();
             _xformSys = xformSys;
             _shader = protoMan.Index(UnshadedShader).Instance();
             ZIndex = GasOverlayZIndex;
@@ -117,7 +115,7 @@ namespace Content.Client.Atmos.Overlays
             for (var i = 0; i < _gasCount; i++)
             {
                 var delays = _frameDelays[i];
-                if (delays.Length == 0)
+                if (delays == null || delays.Length == 0) // LOP edit
                     continue;
 
                 var frameCount = _frameCounter[i];
@@ -128,13 +126,16 @@ namespace Content.Client.Atmos.Overlays
                     continue;
 
                 _timer[i] -= time;
-                _frameCounter[i] = (frameCount + 1) % _frames[i].Length;
+                // LOP edit start
+                if (_frames[i] != null)
+                    _frameCounter[i] = (frameCount + 1) % _frames[i].Length;
+                // LOP edit end
             }
 
             for (var i = 0; i < FireStates; i++)
             {
                 var delays = _fireFrameDelays[i];
-                if (delays.Length == 0)
+                if (delays == null || delays.Length == 0) // LOP edit
                     continue;
 
                 var frameCount = _fireFrameCounter[i];
@@ -143,7 +144,10 @@ namespace Content.Client.Atmos.Overlays
 
                 if (_fireTimer[i] < time) continue;
                 _fireTimer[i] -= time;
-                _fireFrameCounter[i] = (frameCount + 1) % _fireFrames[i].Length;
+                // LOP edit start
+                if (_fireFrames[i] != null)
+                    _fireFrameCounter[i] = (frameCount + 1) % _fireFrames[i].Length;
+                // LOP edit end
             }
         }
 
@@ -167,7 +171,7 @@ namespace Content.Client.Atmos.Overlays
                 xformQuery,
                 _xformSys);
 
-            var mapUid = _mapSystem.GetMapOrInvalid(args.MapId);
+            var mapUid = _mapManager.GetMapEntityId(args.MapId); // LOP edit
 
             if (_entManager.TryGetComponent<MapAtmosphereComponent>(mapUid, out var atmos))
                 DrawMapOverlay(drawHandle, args, mapUid, atmos);
