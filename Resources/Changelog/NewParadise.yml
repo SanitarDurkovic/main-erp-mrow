@@ -777,3 +777,16 @@
   id: 66
   time: '2025-07-30T08:07:59.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/123
+- author: SanitarDurkovic
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u043D\u043E\u0432\u044B\u0445 \u043A\u0430\u043D\u0438\u0441\
+      \u0442\u0440."
+    type: Tweak
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u0451\u043C\u043A\u043E\
+      \u0441\u0442\u044C \u043D\u043E\u0432\u044B\u0445 \u043A\u0430\u043D\u0438\u0441\
+      \u0442\u0440."
+    type: Tweak
+  id: 67
+  time: '2025-08-11T08:40:46.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/139
