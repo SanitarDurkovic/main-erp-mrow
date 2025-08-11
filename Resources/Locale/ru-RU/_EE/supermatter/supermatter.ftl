@@ -21,8 +21,8 @@ supermatter-announcement-cc-tamper =
     Инженерный отдел, немедленно доложите о двигателе сверхматерии.
 supermatter-collide = { CAPITALIZE($target) } врезается в { $sm }!
 supermatter-collide-mob = { CAPITALIZE($target) } тело превращается в пыль!
-supermatter-collide-insert = { CAPITALIZE($target) } трогает { $sm } держа { THE($item) } и оно превращается в пыль!
-supermatter-collide-insert-user = Ты трогаешь { $sm } держа { THE($item) } и оно превращается в пыль!
-supermatter-collide-insert-unremoveable = { CAPITALIZE(THE($target)) } трогает { THE($sm) } держа { THE($item) } и превращается в пыль!
-supermatter-collide-insert-unremoveable-user = Ты трогаешь { THE($sm) } держа { THE($item) } и превращается в пыль!
+supermatter-collide-insert = { CAPITALIZE($target) } трогает { $sm } держа { $item } и оно превращается в пыль!
+supermatter-collide-insert-user = Ты трогаешь { $sm } держа { $item } и оно превращается в пыль!
+supermatter-collide-insert-unremoveable = { CAPITALIZE($target) } трогает { $sm } держа { $item } и превращается в пыль!
+supermatter-collide-insert-unremoveable-user = Ты трогаешь { $sm } держа { $item } и превращается в пыль!
 supermatter-paracusia-player-message = Вы чувствуете, как ваша голова раскалывается от потусторонних видений...
