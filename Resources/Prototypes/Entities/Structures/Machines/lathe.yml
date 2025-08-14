@@ -19,6 +19,11 @@
           - MachineLayer
   - type: Lathe
   - type: MaterialStorage
+    whitelist: # Frontier
+      tags: # Frontier
+        - Sheet # Frontier
+        - RawMaterial # Frontier
+        - Ingot # Frontier
   - type: Destructible
     thresholds:
     - trigger:
@@ -397,12 +402,22 @@
     idleState: icon
     runningState: icon
     staticPacks:
+    # LoP edit start
+    - ToolsStatic
+    - SurgeryStatic
+    - PowerCellsStatic
+    - RollerBedsStatic
+    # LoP edit end
     - SecurityEquipmentStatic
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
     # LoP edit start
+    - PowerCells
+    - Instruments
+    - Equipment
+    - ScienceWeapons
     - LoPTVGPack
     - LoPNVGPackSec
     # LoP edit end
@@ -481,6 +496,13 @@
     idleState: icon
     runningState: icon
     staticPacks:
+    # LoP Edit Start
+    - ToolsStatic
+    - PartsStatic
+    - BasicChemistryStatic
+    - PowerCellsStatic
+    - MedicalBoardsStatic
+    # LoP Edit End
     - TopicalsStatic
     - ChemistryStatic
     - MedicalStatic
@@ -489,7 +511,12 @@
     - EmptyMedkitsStatic
     - SurgeryStatic
     dynamicPacks:
-    - LoPNVGPackM # LoP Edit
+    # LoP Edit Start
+    - PowerCells
+    - Instruments
+    - Equipment
+    - LoPNVGPackM
+    # LoP Edit End
     - Chemistry
   - type: Machine
     board: MedicalTechFabCircuitboard
@@ -595,6 +622,9 @@
   name: ore processor
   description: It produces sheets and ingots using ores.
   components:
+    - type: MaterialStorageMagnetPickup # Frontier
+      range: 1 # LoP Edit 0.3 < 1
+      magnetEnabled: true
     - type: Sprite
       sprite: Structures/Machines/ore_processor.rsi
       layers:
@@ -621,6 +651,8 @@
       staticPacks:
       - OreSmelting
       - RGlassSmelting
+    - type: PlaceableSurface # DeltaV: Allow ore bags to dump into it directly
+      isPlaceable: false # but not place on it if you just click it with a random item
 
 - type: entity
   parent: OreProcessor
